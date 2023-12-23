@@ -1,0 +1,531 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;  
+  
+}
+  
+.animate__animated.animate__slideInDown{
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInUpBig{
+    --animate-duration: 2s;
+}
+  
+h1 {
+    text-align: center;
+    font-size: large;
+}
+
+main h4{
+    font-family: 'poppins', cursive;   
+    text-align: center;
+    font-weight:300;
+    color: black;
+    opacity: 1;   
+}
+  
+main h4:hover{
+    color: rgb(240, 240, 0);
+    
+}
+
+
+
+/* background */
+body {
+    background-image: url(bg.png);
+    width: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'poppins', cursive; 
+    margin: 0;
+}
+/* huruf body h4 */
+body h4{
+    font-family: 'poppins', cursive;   
+    text-align: center;
+    font-weight: 250;
+    color: white;
+}
+
+body p{
+    font-family: 'poppins', cursive;       
+    font-weight: 250;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+/* navbar */
+
+nav {
+    background-color: #EFE4DE;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'poppins', cursive;   
+}
+nav a:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    
+}
+
+.bar {
+    text-decoration: none;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'poppins', cursive;   
+}
+.bar:hover{
+    background-color: #000000;
+    color: #EFE4DE;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+
+/* tanggal */
+nav h4 {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    margin-top: 28px;
+    margin-right: 160px;
+    text-decoration: none;
+    font-family: 'poppins', cursive;   
+}
+
+nav ul{
+    padding-top: 10px;
+    float: right;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 30px;  
+}
+nav ul li a{
+    font-size: 15px;
+    border-radius: 13px;
+}
+
+/* judul picky2 */
+nav .judul {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle; /* Align vertically with the list items */
+}
+
+
+/* gambar pick2 */
+.judul img {
+    width: 400px; /* Adjust the width as needed */
+    max-height: auto;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+.judul img:hover {
+    background-color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+/* List Item Nav */
+nav ul{
+    padding-top: 10px;
+    float: right;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 30px;  
+}
+nav ul li a{
+    font-size: 15px;
+    border-radius: 13px;
+}
+
+/* input hover ukuran */
+input{
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+    border-radius: 10px;
+    padding: 8px 8px;
+}
+input, textarea, button {
+    font-size: 14px;
+    
+}
+input:hover{
+    background-color: #eaedff;
+}
+
+button{
+    background-color: #0055ff;
+    border-radius: 10px;
+   
+    color: #ffffff;
+    padding: 5px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer; 
+    font-weight: bold;   
+}
+button:hover{
+    background-color:#f0fd8b;
+    color: black;
+    border: solid black;
+    font-weight: bold;
+}
+
+/*logo*/
+.uil{
+    font-size: 18px;
+}
+
+
+.toggle-wrap a {
+  display: inline-block;
+  background:  rgb(118, 76, 255);
+  border-radius: 100px;
+  position: relative;
+  width: 3em;
+  height: 1.50em;
+  vertical-align: middle;
+  margin: 0 0.5em;
+  border: solid  rgb(118, 76, 255);
+}
+.toggle-wrap strong {
+  display: none;
+}
+
+.alt .switch {
+  left: calc(100% - 1.6em);
+}
+
+.numgroups-wrap {
+    display: none;
+}
+.alt .numgroups-wrap {
+  display: inherit;
+}
+
+.alt .pergroup-wrap {
+    display: none;
+}
+.switch {
+    position: absolute;
+    top: 0.1em;
+    left: 0.15em;
+    height: 1em;
+    width: 1.5em;
+    background: #fff;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+textarea{
+    padding-top: 10px;
+    resize: none;
+    width: 400px;
+    height: 150px;
+    background-color: #fadefc;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'poppins', cursive;
+    
+}
+
+/* all grup */
+.groups {
+    padding: 1em;
+      margin: 1em 0;
+      display: flex;
+    flex-wrap: wrap;
+      justify-content: space-evenly;
+}
+
+.group h2 {
+    margin: 0;
+}
+  
+/* tiap grup*/
+.group {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background: #ffffff;
+    padding: 1em;
+    margin: 1em;
+    width: 25%;
+    border: solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgb(42, 42, 42);
+}		
+
+
+/* card/wrap/cardhasil*/
+.container {
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;    
+}
+.container h2{
+    font-weight: 200;
+    font-size: 15px;
+}
+.container label{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* INPUT NAMA GROUP*/
+.container .card {
+    margin:10px;
+    box-shadow: 0 4px 8px 0 #000000;
+    padding: 20px;    
+    border-radius: 20px;
+    background-color: #ffddd6;
+    width: 300px;
+    position: relative;
+    height:180px;
+    color: black;
+    flex-direction:column;
+    text-align: center;
+    font-weight: medium;
+}
+.container .card button{
+    background-color: black;
+}
+.container .card button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+
+/* HASIL GROUPPING*/
+/* button at cardhasil container*/
+.container .cardHasil {
+    font-weight: 100;
+    font-size: medium;
+    text-align: center;
+    margin-top:50px;
+    box-shadow: 0 4px 8px 0 #000000;
+    background-color: #dff8ca;
+    border-radius: 20px;    
+    display: flex;
+    width: 1500px;
+    position:relative;
+    flex-direction:column;
+    text-align: center;  
+    border: solid #000000;
+}
+
+.cardHasil h2{
+    font-family: 'Reenie Beanie', cursive; 
+    font-size: 50px;
+    margin: 0;
+    font-weight: 800;
+}
+.container .cardHasil button{
+    background-color: #ffffff;
+    border : solid white;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer; 
+    font-weight: bold;   
+}
+/* delete at cardhasil container*/
+.container .cardHasil .dltgroup {
+    border-radius: 10px;
+    border: solid #ffffff;
+    color: red;
+    display: inline;
+    cursor: pointer; 
+    font-weight: bold;   
+    padding: 5px;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* add at cardhasil container*/
+.container .cardHasil .uil-plus-circle {
+    background-color: white;
+    border-radius: 1000px;
+    border: solid #ffffff;
+    color: black;
+    display: inline;
+    cursor: pointer; 
+    font-size: 30px; 
+}
+/* edit at cardhasil container*/
+.container .cardHasil .editBtn i {
+    color: blue;
+    font-weight: bold; 
+    border : solid white;
+    font-size: 20px; 
+}
+/* deleteitem at cardhasil container*/
+.container .cardHasil .deleteBtn i {
+    color: red;
+    font-weight: bold; 
+    border : solid white;
+    font-size: 20px; 
+}
+
+
+/* delete semua hasil at cardhasil container*/
+.container .cardHasil .clear-all-btn{
+    background-color: black;
+    color: white;
+    font-weight: bold;  
+}
+.container .cardHasil .clear-all-btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;  
+}
+
+
+
+/* INPUT CANDIDATES-TOGGLES*/
+.container .wrap{
+    margin: 1px 50px;
+    box-shadow: 0 4px 8px 0 #000000;
+    padding: 22px;    
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 520px;
+    position: relative;
+    height:350px;
+    flex-direction:column;
+    text-align: center;
+}
+
+
+/* EXPORT BUTTONS*/
+/* CARD*/
+.result{
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1%;    
+    margin: 0;
+}
+/* BUTTONS*/
+.result .cardexport {
+    margin:10px;
+    box-shadow: 0 4px 8px 0 #000000;
+    padding: 10px;    
+    border-radius: 15px;
+    background-color: #0036a1;
+    color:white;
+    width: 300px;
+    position: relative;
+    height:120px;
+    flex-direction:column;
+    text-align: center;    
+}
+
+
+
+.result .cardexport h2 {
+    font-weight: 100;
+    font-size: medium;
+    text-align: center;
+}
+/* button eksport*/
+.button__flex{
+    width: 100px;
+    align-items: center;
+    margin: 0;
+    padding: 8px 10px;
+    background-color: #f0fd8b;
+    gap:30px;
+    width: 100px;
+    border-radius: 15px;
+    border: solid #000000;
+    color: #000000;
+}
+.button__flex:hover{
+    background-color:  rgb(0, 0, 0);
+    color:#f0fd8b ;
+}  
+  
+.hewan{
+    margin: 30px;
+    position: absolute;    
+    left:6%;
+    bottom:14%;
+    padding-top: 50px;
+}
+a img{
+    width: 300px;
+}
+.buah{
+    margin: 30px;
+    margin-left: 30px;
+    position: absolute;
+    margin-right: 30px;
+    right:6%;
+    bottom:14%;
+    padding-top: 50px;
+}
+
+.tombol h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+}
+
+.tombol{
+    top: 28%;
+    left: 22%;
+    box-shadow: 0 4px 8px 0 #000000;  
+    border-radius: 20px;
+    background-color: #0011ad;
+    width: 800px;
+    position: absolute;
+    height:400px;
+    color:white;
+}

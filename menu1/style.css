@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(bg.png);
+    width: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-position: center;
+    font-family: 'poppins', cursive;   
+}
+input, textarea, button {
+	font-size: 14px;
+	
+}
+.jdlh{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.lgi{
+    border:none;
+    background-color: transparent;
+    
+}
+
+.el{   
+    border-color: rgb(0, 0, 0);
+    font-family: 'poppins', cursive;
+    background-color: #EFE4DE;
+    box-shadow: 0 4px 8px 0 #000000;
+    
+}
+
+.textarea,
+.card-body{
+    border-radius: 10px;
+}
+
+button{
+    font-weight: bold;
+}
+.shuffle-area{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #000000;
+}
+.list-group-item label{
+    color:black
+}
+label,
+.page-header{
+    color: white;
+}
+
+#checkbox-label{
+    color: black;
+}
+
+.container {
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 550px;
+}
+.header-h1 {
+    color: black;
+
+}
+.textarea {
+    padding-top: 10px;
+	resize: none;
+	width: 500px;
+	height: 150px;
+	background-color: #effff1;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'poppins', cursive;
+    box-shadow: 0 4px 8px 0 #000000;
+    
+}
+
+#input-file {
+    color: #0069D9;
+    cursor: pointer;
+}
+#shuffle{
+    display: block;
+    width: 100%;
+}
+.shuffle-area{
+    box-sizing: border-box;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.form-check-input{
+    margin-left: 5px;
+}
+.form-check-label{
+    margin-left: 25px;
+}
+.reset{
+    float: right;
+    background-color: red;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 #000000;
+}
+.reset:hover{
+    color: red;
+    background-color: #000000;
+}
+.col-md-6 ul li strong span{
+   font-size: 20px;
+}
+.display{
+    padding: 30px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #000000;
+    
+} 
+input[type=checkbox] {
+    filter: hue-rotate(240deg) ;
+    cursor: pointer;
+  }
+.input-ready{
+    margin-top: 20px;
+}
+
+nav {
+    text-decoration: none;
+    background-color: #EFE4DE;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'poppins', cursive;   
+}
+nav a:hover {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    
+}
+.row{
+    margin-top: 20px;
+}
+
+#ready{
+    width: 200px;
+    position:relative;
+    bottom: 1%;
+    left: 25%;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0 #000000;
+}
+
+#shuffle{
+    width: 100px;
+    position:relative;
+    bottom: 1%;
+    left: 40%;
+    border-radius: 13px;
+    box-shadow: 0 2px 4px 0 #000000;
+    
+}
+
+#ready:hover{
+    background-color: white;
+    color: #007bff;
+}
+
+#shuffle:hover{
+    background-color: white;
+    color: #28a745;
+}
+.input-ready{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+
+#input-file{
+    position: absolute;
+    left: 5%;
+    bottom:118%;
+}
+
+.bar {
+    text-decoration: none;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'poppins', cursive;   
+    margin-top: 15px;
+}
+.bar:hover{
+    background-color: #000000;
+    color: #EFE4DE;
+    padding-left: 10px;
+    transition: 0.5s;
+    padding-right: 10px;
+    
+}
+
+nav .judul {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+.judul img {
+    width: 400px; /* Adjust the width as needed */
+    max-height: auto;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.judul img:hover {
+    background-color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+
+/* tanggal */
+nav h4 {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    margin-top: 28px;
+    font-size: 15px;
+    margin-right: 160px;
+    text-decoration: none;
+    font-family: 'poppins', cursive;   
+}
+
+nav ul{
+    padding-top: 10px;
+    float: right;
+    margin-right: 50px;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 30px;  
+}
+nav ul li a{
+    font-size: 15px;
+    border-radius: 13px;
+}
+
+@media only screen and (max-width: 340px) {
+
+    #reset{
+        width: 100%;
+        font-size: 14px;
+    }
+    .header-h1{
+        font-size: 35px;
+    }
+    .col-md-6 ul li strong span{
+        font-size: 18px;
+     }
+     .form-check-label{
+         margin-bottom: 10px;
+     }
+  }

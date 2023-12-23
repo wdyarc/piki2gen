@@ -1,0 +1,261 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;  
+  
+}
+.animate__animated.animate__tada{
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__slideInDown{
+    --animate-duration: 2s;
+}
+.row{
+    position: absolute;
+    left:8.5%;
+
+}
+
+/* Float four columns side by side */
+.column {
+  float:inline-start;
+  display: block;
+  padding: 0 40px;
+  margin-top: 3%;
+
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.tm {
+    background-color:#C4FFDD ;
+}
+
+.np{
+    background-color: #FFDADA;
+}
+
+
+.animate__animated.animate__backInLeft{
+    --animation-direction: 2s;
+}
+/* how to use*/
+#how {
+    width: 500px;
+    color:black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*card*/
+.content {
+    margin-left: 20px;
+    text-align: justify;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+.content h3{
+    color:rgb(42, 61, 165);
+}
+
+/* about*/
+.info {
+    max-width: 700px;
+    margin: 29px auto ;
+    background-color: rgb(237, 255, 238);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+h2, h3, p {
+    color: black;
+}
+h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.lets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lets label {
+    margin-top: auto;
+    color: black;
+}
+.lets label:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+h3 {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#how p {
+    font-weight: normal;
+    font-size: 13px;
+}
+  
+main h4{
+    font-family: 'poppins', cursive;   
+    text-align: center;
+    font-weight:300;
+    color: white;
+    opacity: 1;
+      
+}
+
+  
+body {
+    background-image: url(bg.png);
+    width: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'poppins', cursive; 
+    margin: 0;
+}
+
+nav {
+    background-color: #EFE4DE;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'poppins', cursive;   
+}
+nav a:hover {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.bar {
+    text-decoration: none;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'poppins', cursive;   
+}
+.bar:hover{
+    background-color: #000000;
+    color: #EFE4DE;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+nav .judul {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+.judul img {
+    width: 400px; /* Adjust the width as needed */
+    max-height: auto;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.judul img:hover {
+    background-color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+
+/* tanggal */
+nav h4 {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    margin-top: 28px;
+    margin-right: 160px;
+    text-decoration: none;
+    font-family: 'poppins', cursive;   
+}
+
+nav ul{
+    padding-top: 10px;
+    float: right;
+    margin-right: 50px;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 30px;  
+}
+nav ul li a{
+    font-size: 15px;
+    border-radius: 13px;
+}
+
+.contentinfo h3{
+font-size: 15px;
+}
+
+.contentinfo{
+    height: 410px;
+}

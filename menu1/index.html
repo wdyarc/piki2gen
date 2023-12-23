@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>PIKIPIKI-Name Picker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+        <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@500&family=Reenie+Beanie&family=Signika:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ANIMATIONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <nav class="animate__animated animate__slideInDown">
+        <a href="\index.html" class="judul animate__animated animate__backInLeft animate__slow" > 
+            <img src="Group 31.png" width="400"> 
+        </a>             
+
+        <!-- TANGGAL 
+            <script>
+            // create a function to update the date and time
+            function updateDateTime() {
+                // create a new `Date` object
+                const now = new Date();
+
+                // get the current date and time as a string
+                const currentDateTime = now.toLocaleString();
+
+                // update the `textContent` property of the `span` element with the `id` of `datetime`
+                document.querySelector('#datetime').textContent = currentDateTime;
+            }
+
+            // call the `updateDateTime` function every second
+            setInterval(updateDateTime, 1000);
+        </script>
+        <h4 style="color: black;" id="datetime"></h4>
+        -->
+
+        <h4><?PHP include 'date.php' ?></h4>
+        <ul class="animate__animated animate__backInRight animate__slow ">
+            <li >
+                <a class="bar" href="\about.html"> 
+                    about
+                    <i class="uil uil-user"></i>
+                </a>
+            </li>
+            <li>
+                <a  class="bar" href="\use.html"> 
+                    how to
+                    <i class="uil uil-question-circle"></i> 
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <div class="container ">
+        <!--<header class="page-header text-center my-3">
+            <h1 class="jdlh animate__animated animate__fadeInUpBig animate__slow">Random Name Picker</h1>
+        </header>-->
+        <div class="row">
+            <div class="col-md-6 animate__animated animate__backInLeft">
+                <div class="from-group mb-2 ">
+                    <label for="inp" class="mt-2">Add Candidates : </label>
+                    <textarea name="" id="input" class="form-control textarea" rows="10"
+                        placeholder=" enter candidates"></textarea><br>
+                        <label>Or</label>
+                </div>
+                <div class=" from-group card p-2 input-ready">
+                    <input type="file" accept="text/plain" class="form-control-file" name="" id="input-file">
+                    <button class="btn btn-primary text-uppercase font-weight-bold my-3" id="ready" type="button">
+                        Ready
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 animate__animated animate__backInRight">
+                <label for="" class="mt-2">Result :</label>
+                <div class="card card-body text-center display">
+                    <h2 id="display">RESULT HERE</h2>
+                </div>
+
+                <ul class="list-group-item lgi my-3">
+                    <li class="el list-group-item">
+                        <label>
+                            1 <sup>st</sup>  : <span id="first-position"></span>
+                        </label>
+                    </li>
+                    <li class="el list-group-item">
+                        <label>
+                            2 <sup>nd</sup> : <span id="second-position"></span>
+                        </label>
+                    </li>
+                    <li class="el list-group-item">
+                        <label>
+                            3 <sup>st</sup>  : <span id="third-position"></span>
+                        </label>
+                    </li>
+                </ul>
+                <div class="card p-1 d-block shuffle-area">
+                    <div class="form-group">
+                        <input type="checkbox" class="form-check-input c9" name="" id="checkbox">
+                        <label for="checkbox" class="form-check-label" id="checkbox-label">Remove name after a
+                            Draw</label>
+                        <button class="btn btn-primary reset text-uppercase mb-2" id="reset">Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success text-uppercase font-weight-bold my-2"
+                            id="shuffle">Shuffle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PIKIPIKI-Team Maker</title>
+ <!-- ICONS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@500&family=Reenie+Beanie&family=Signika:wght@300&display=swap" rel="stylesheet">
+
+   <!-- ANIMATIONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <!-- STYLESHEETS -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+ 
+  <!-- scripts --> 
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+  <script> 
+
+    function convertToCSV() {
+    // Get the container of the groups
+    var groupsContainer = document.querySelector('.groups');
+
+    // Initialize an empty CSV content
+    var csvContent = '';
+
+    // Iterate over each group
+    groupsContainer.querySelectorAll('.group').forEach(function (group, groupIndex) {
+        // Get the group number and append it to the CSV
+        csvContent += 'Group ' + (groupIndex + 1) + '\n';
+
+        // Iterate over each member in the group
+        group.querySelectorAll('.memberName').forEach(function (member) {
+            // Get the member name and append it to the CSV
+            csvContent += member.textContent.trim() + '\n';
+        });
+
+        // Add a newline to separate groups
+        csvContent += '\n';
+    });
+
+    // Create a Blob with the CSV content
+    var blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+
+    // Create a download link
+    var link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+
+    // Set the filename for the CSV file
+    link.download = 'piki2team.csv';
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to start the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+    alert("Your PIKIPIKI's is Downloaded");
+    }
+</script>
+
+</head>
+<body>
+    <div>
+        <nav class="animate__animated animate__slideInDown">
+            
+            
+            <a href="\index.html" class="judul animate__animated animate__backInLeft " > 
+                <img src="Group 31.png" width="400"> 
+            </a>     
+            
+            <!-- TANGGAL 
+                <script>
+                // create a function to update the date and time
+                function updateDateTime() {
+                    // create a new `Date` object
+                    const now = new Date();
+    
+                    // get the current date and time as a string
+                    const currentDateTime = now.toLocaleString();
+    
+                    // update the `textContent` property of the `span` element with the `id` of `datetime`
+                    document.querySelector('#datetime').textContent = currentDateTime;
+                }
+    
+                // call the `updateDateTime` function every second
+                setInterval(updateDateTime, 1000);
+            </script>
+            <h4 style="color: black;" id="datetime"></h4>
+            -->
+            
+            <h4><?PHP include 'date.php' ?></h4>
+            
+            <ul class="animate__animated animate__backInRight ">
+                <li >
+                    <a class="bar" href="\about.html"> 
+                        about
+                        <i class="uil uil-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a  class="bar" href="\use.html"> 
+                        how to
+                        <i class="uil uil-question-circle"></i> 
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <main >        
+            <script>
+            // create a function to update the date and time
+            function updateDateTime() {
+                // create a new `Date` object
+                const now = new Date();
+
+                // get the current date and time as a string
+                const currentDateTime = now.toLocaleString();
+
+                // update the `textContent` property of the `span` element with the `id` of `datetime`
+                document.querySelector('#datetime').textContent = currentDateTime;
+            }
+
+            // call the `updateDateTime` function every second
+            setInterval(updateDateTime, 1000);
+            </script>
+            <!--<h4 id="datetime"></h4> -->
+            <div  class="container ">
+
+                <div class="card animate__animated animate__fadeInUpBig  ">
+                    <h2>Input Group Name : </h2>
+                    <input placeholder="Group Name" type="text" id ="foo" value="">
+                    <br><br>
+                    <button onclick="getValue();"class="button" > submit </button>                                   
+                </div>
+            
+                <div class="wrap alt animate__animated animate__fadeInUpBig " >
+                    <p class="toggle-wrap"> by Candidates per Group <a class="choice" href="#choice"><strong>TOGGLE</strong><span class="switch"></span></a> by Number of Groups</p>
+
+                    <p class="pergroup-wrap">The Number Candidates per Group : <input  placeholder="put number of candidates" class="pergroup" type="integer" value="" /></p>
+                    <p class="numgroups-wrap">The Number of Groups : <input placeholder="put number of groups"class="numgroups" type="integer" value="" /></p>
+                    <p>
+                        <textarea placeholder=" enter candidates"  name="students" id="students" cols="40" rows="15"></textarea>
+                    </p>
+                    <button id="rnd">generate</button>
+                </div>
+
+                <div class="cardHasil animate__animated animate__fadeInUpBig ">
+                    <h1>Result</h1>
+                    <div id = "GFG">
+                        <h2 style="text-align:center" id="boo"></h2>
+                        <div class="groups" ></div>
+                    </div>                 
+                    <button style="width: 150px;left: 50%;transform: translateX(-50%);bottom: 0;position:absolute;" class="clear-all-btn"> Clear All Result</button>
+                </div>            
+
+                
+            </div>
+            <div class="result animate__animated animate__fadeInUpBig ">
+                <div class="cardexport ">
+                    <h2> Save Result as </h2>    
+                    <a class="button__flex" onclick="convertToCSV()">CSV
+                        <i class="uil uil-server-alt"></i>
+                    </a>       
+                </div>
+            </div>          
+        </main> 
+    
+    </div>
+ 
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
