@@ -35,7 +35,7 @@ main h4:hover{
 
 /* background */
 body {
-	background-image: url("bg.png");
+	background-image: url("http://localhost/widya/piki2gen/bg.png");
     width: auto;
     background-size: cover;
     background-attachment: fixed;
@@ -198,7 +198,6 @@ button{
     margin: 4px 2px;
     cursor: pointer; 
     font-weight: bold;   
-    box-shadow: 0 2px 4px 0 #000000;
 }
 button:hover{
     background-color:#f0fd8b;
@@ -206,6 +205,8 @@ button:hover{
     border: solid black;
     font-weight: bold;
 }
+
+
 
 /*logo*/
 .uil{
@@ -331,12 +332,18 @@ textarea{
 }
 .container .card button{
     background-color: black;
-    box-shadow: 0 2px 4px 0 #000000;
+    
 }
 .container .card button:hover{
     background-color: white;
     color: black;
     font-weight: bolder;
+    box-shadow: 0 2px 4px 0 #000000;
+}
+
+button:hover {
+    box-shadow: 0 2px 4px 0 #000000;
+
 }
 
 
@@ -370,8 +377,7 @@ textarea{
     border-radius: 10px;
     color: black;
     cursor: pointer; 
-    font-weight: bold;   
-    box-shadow: 0 2px 4px 0 #000000;
+    font-weight: bold;       
 }
 /* delete at cardhasil container*/
 .container .cardHasil .dltgroup {
@@ -386,6 +392,7 @@ textarea{
     position: absolute;
     top: 0;
     left: 0;
+    
 }
 
 /* add at cardhasil container*/
