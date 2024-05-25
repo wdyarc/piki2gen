@@ -35,7 +35,7 @@ main h4:hover{
 
 /* background */
 body {
-	background-image: url("piki2gen/menu2/bg.png");
+    background-image: url(bg.png);
     width: auto;
     background-size: cover;
     background-attachment: fixed;
